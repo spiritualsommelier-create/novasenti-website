@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaSenti | Choose Your Intelligence | Full Funnel Commercial Intelligence Modules</title>
+
+  <meta name="description" content="Four independently licensable modules. Acquisition intelligence, CRM and lifecycle intelligence, acquisition benchmarks and CRM benchmarks. Full funnel or standalone." />
+
+  <link rel="canonical" href="https://www.novasenti.com/intelligence.html" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+
+      --bg-page: #030B2E;
+
+      --bg-card: #071744;
+
+      --bg-card-hover: #0c1f56;
+
+      --text-primary: #FFFFFF;
+
+      --text-body: #CBD5E1;
+
+      --text-secondary: #94A3B8;
+
+      --text-muted: #64748B;
+
+      --m1: #1565FF;
+
+      --m2: #4A3DFF;
+
+      --m3: #A15CFF;
+
+      --grad-btn: linear-gradient(90deg, #1565FF, #4A3DFF);
+
+      --grad-text: linear-gradient(90deg, #1565FF 0%, #4A3DFF 50%, #A15CFF 100%);
+
+      --grad-bar: linear-gradient(90deg, #06164D 0%, #1565FF 35%, #4A3DFF 70%, #A15CFF 100%);
+
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body { font-family: 'Inter', sans-serif; background: var(--bg-page); color: var(--text-body); font-size: 15px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    .grad-bar { height: 3px; background: var(--grad-bar); width: 100%; }
+
+    .grad-text { background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; display: block; }
+
+    /* BUTTONS */
+
+    .btn { display: inline-block; padding: 14px 30px; font-weight: 700; font-size: 15px; border-radius: 8px; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: 'Inter', sans-serif; }
+
+    .btn-primary { background: var(--grad-btn); color: #fff; }
+
+    .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    .btn-secondary { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.7); }
+
+    /* NAV */
+
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(3,11,46,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.06); height: 72px; display: flex; align-items: center; }
+
+    .nav-inner { width: 100%; display: flex; align-items: center; justify-content: space-between; }
+
+    .nav-logo img { height: 52px; display: block; }
+
+    .nav-logo { text-decoration: none; }
+
+    .nav-right { display: flex; align-items: center; gap: 12px; }
+
+    .nav-cyi { color: var(--text-primary); text-decoration: none; font-size: 15px; font-weight: 700; padding: 8px 16px; border-radius: 6px; background: rgba(161,92,255,0.1); border: 1px solid rgba(161,92,255,0.25); }
+
+    .nav-login { display: inline-block; padding: 9px 20px; background: var(--grad-btn); color: #fff; font-weight: 700; font-size: 14px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s; white-space: nowrap; }
+
+    .nav-login:hover { opacity: 0.85; }
+
+    @media (max-width: 600px) { .nav-cyi { font-size: 12px; padding: 7px 10px; } .nav-login { font-size: 12px; padding: 8px 14px; } .nav-logo img { height: 38px; } }
+
+    /* PAGE HERO */
+
+    .page-hero { padding: 72px 0 56px; }
+
+    .page-hero h1 { font-size: 52px; font-weight: 800; color: var(--text-primary); letter-spacing: -1.5px; margin-bottom: 24px; line-height: 1.1; }
+
+    .page-hero-intro { max-width: 800px; }
+
+    .page-hero-intro p { font-size: 17px; color: var(--text-body); line-height: 1.8; margin-bottom: 10px; }
+
+    .page-hero-intro p strong { color: var(--text-primary); }
+
+    /* MODULE NAV PILLS */
+
+    .mod-nav { display: flex; gap: 12px; flex-wrap: wrap; margin: 36px 0 0; }
+
+    .mod-pill { display: inline-block; padding: 8px 20px; border-radius: 999px; font-size: 13px; font-weight: 700; text-decoration: none; border: 1.5px solid; transition: all 0.2s; }
+
+    .mod-pill.m1 { color: var(--m1); border-color: rgba(21,101,255,0.4); }
+
+    .mod-pill.m1:hover { background: rgba(21,101,255,0.12); }
+
+    .mod-pill.m2 { color: var(--m2); border-color: rgba(74,61,255,0.4); }
+
+    .mod-pill.m2:hover { background: rgba(74,61,255,0.12); }
+
+    .mod-pill.m3 { color: var(--m3); border-color: rgba(161,92,255,0.4); }
+
+    .mod-pill.m3:hover { background: rgba(161,92,255,0.12); }
+
+    /* FOUNDING BANNER */
+
+    .founding-banner { margin: 0 0 0; padding: 56px 0; }
+
+    .founding-inner { background: linear-gradient(135deg, rgba(74,61,255,0.1) 0%, rgba(161,92,255,0.08) 100%); border: 1px solid rgba(161,92,255,0.2); border-radius: 14px; padding: 40px 48px; position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+
+    .founding-inner::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad-bar); }
+
+    .founding-inner h2 { font-size: 26px; font-weight: 800; color: var(--text-primary); margin-bottom: 20px; grid-column: 1 / -1; letter-spacing: -0.5px; }
+
+    .founding-col h3 { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--m3); margin-bottom: 14px; }
+
+    .founding-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+    .founding-col ul li { font-size: 14px; color: var(--text-body); padding-left: 18px; position: relative; line-height: 1.55; }
+
+    .founding-col ul li::before { content: '→'; position: absolute; left: 0; color: var(--m2); font-weight: 700; }
+
+    .founding-footer { grid-column: 1 / -1; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 8px; }
+
+    .founding-note { font-size: 13px; color: var(--text-secondary); font-style: italic; }
+
+    /* MODULE SECTIONS */
+
+    .module { padding: 80px 0; position: relative; }
+
+    .module + .module { border-top: 1px solid rgba(255,255,255,0.05); }
+
+    /* Module accent glow */
+
+    .module.mod1::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--m1); border-radius: 0 4px 4px 0; }
+
+    .module.mod2::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--m2); border-radius: 0 4px 4px 0; }
+
+    .module.mod3::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--m3); border-radius: 0 4px 4px 0; }
+
+    .module.mod4::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--m3); border-radius: 0 4px 4px 0; }
+
+    .module-top { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 36px; }
+
+    .module-icon { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; }
+
+    .mod1 .module-icon { background: rgba(21,101,255,0.15); }
+
+    .mod2 .module-icon { background: rgba(74,61,255,0.18); }
+
+    .mod3 .module-icon, .mod4 .module-icon { background: rgba(161,92,255,0.15); }
+
+    .module-title-group { flex: 1; }
+
+    .module-num { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; display: block; }
+
+    .mod1 .module-num { color: var(--m1); }
+
+    .mod2 .module-num { color: var(--m2); }
+
+    .mod3 .module-num, .mod4 .module-num { color: var(--m3); }
+
+    .module-title { font-size: 32px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; margin-bottom: 10px; }
+
+    .module-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .badge { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; }
+
+    .badge-m1 { background: rgba(21,101,255,0.15); color: var(--m1); }
+
+    .badge-m2 { background: rgba(74,61,255,0.15); color: var(--m2); }
+
+    .badge-m3 { background: rgba(161,92,255,0.15); color: var(--m3); }
+
+    .badge-addon { background: rgba(161,92,255,0.12); color: var(--m3); border: 1px solid rgba(161,92,255,0.3); }
+
+    .module-subhead { font-size: 21px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.3; }
+
+    .module-intro { font-size: 16px; color: var(--text-body); line-height: 1.8; margin-bottom: 36px; max-width: 780px; }
+
+    /* 3-column report cards */
+
+    .report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 36px; }
+
+    .report-card { background: var(--bg-card); border-radius: 12px; padding: 24px; position: relative; overflow: hidden; transition: all 0.25s; }
+
+    .report-card:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
+
+    .report-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+
+    .mod1 .report-card::before { background: var(--m1); }
+
+    .mod2 .report-card::before { background: var(--m2); }
+
+    .mod3 .report-card::before, .mod4 .report-card::before { background: var(--m3); }
+
+    .report-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; display: block; }
+
+    .mod1 .report-label { color: var(--m1); }
+
+    .mod2 .report-label { color: var(--m2); }
+
+    .mod3 .report-label, .mod4 .report-label { color: var(--m3); }
+
+    .report-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+    .report-card ul li { font-size: 13px; color: var(--text-body); padding-left: 16px; position: relative; line-height: 1.65; }
+
+    .report-card ul li::before { content: '→'; position: absolute; left: 0; color: var(--text-muted); font-size: 12px; }
+
+    /* Standalone module bullets (M3/M4) */
+
+    .mod-bullets { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; max-width: 860px; }
+
+    .mod-bullets li { font-size: 15px; color: var(--text-body); padding-left: 24px; position: relative; line-height: 1.75; }
+
+    .mod-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--m3); font-weight: 700; }
+
+    .module-closer { font-size: 17px; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+
+    /* CLOSING */
+
+    .closing { padding: 56px 0; background: linear-gradient(180deg, rgba(74,61,255,0.05) 0%, transparent 100%); }
+
+    .closing p { font-size: 16px; color: var(--text-body); max-width: 800px; line-height: 1.8; }
+
+    /* SCROLL OFFSET for sticky nav */
+
+    .module { scroll-margin-top: 88px; }
+
+    /* BACK TO TOP */
+
+    #back-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 50%; background: var(--grad-btn); color: #fff; font-size: 18px; font-weight: 700; display: none; align-items: center; justify-content: center; text-decoration: none; z-index: 200; box-shadow: 0 4px 20px rgba(21,101,255,0.4); transition: opacity 0.2s, transform 0.2s; }
+
+    #back-top:hover { opacity: 0.85; transform: translateY(-2px); }
+
+    #back-top.visible { display: flex; }
+
+    .footer { background: #020920; border-top: 1px solid rgba(255,255,255,0.05); padding: 44px 0 28px; }
+
+    .footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; flex-wrap: wrap; gap: 16px; }
+
+    .footer-brand { font-size: 14px; color: var(--text-secondary); }
+
+    .footer-legal { display: flex; gap: 24px; }
+
+    .footer-legal a { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+
+    .footer-legal a:hover { color: var(--text-body); }
+
+    .footer-copy { font-size: 13px; color: var(--text-secondary); }
+
+    .footer-cia { text-align: center; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.04); }
+
+    .footer-cia span { font-size: 12px; font-weight: 800; letter-spacing: 0.22em; background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 960px) {
+
+      .report-grid { grid-template-columns: 1fr; }
+
+      .founding-inner { grid-template-columns: 1fr; gap: 28px; }
+
+      .page-hero h1 { font-size: 38px; }
+
+      .module-title { font-size: 26px; }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .wrap { padding: 0 20px; }
+
+      .page-hero h1 { font-size: 30px; }
+
+      .founding-inner { padding: 28px 20px; }
+
+      .module-top { flex-direction: column; gap: 16px; }
+
+      .footer-top { flex-direction: column; align-items: flex-start; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="top"></div>
+
+<!-- NAV -->
+
+<nav class="nav">
+
+  <div class="wrap nav-inner">
+
+    <a href="/" class="nav-logo" aria-label="NovaSenti — Home">
+
+      <img src="https://raw.githubusercontent.com/spiritualsommelier-create/novasenti-assets/refs/heads/main/HomePageLogo_CIA.svg" alt="NovaSenti" height="52" />
+
+    </a>
+
+    <div class="nav-right">
+
+      <a href="/intelligence.html" class="nav-cyi">Choose Your Intelligence</a>
+
+      <a href="https://app.novasenti.com" class="nav-login">Client Login</a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+  <div class="wrap">
+
+    <span class="eyebrow" style="color:var(--m3);">The Platform</span>
+
+    <h1>Choose Your <span class="grad-text">Intelligence</span></h1>
+
+    <div class="page-hero-intro">
+
+      <p>NovaSenti is modular. Start where your business needs it most.</p>
+
+      <p><strong>Module 1</strong> delivers acquisition intelligence. <strong>Module 2</strong> delivers CRM and lifecycle intelligence. Together they give you full funnel vision. Each is powerful alone. Combined they are unmatched.</p>
+
+      <p><strong>Module 3</strong> and <strong>Module 4</strong> deliver independent benchmark intelligence. No subscription to Module 1 or 2 required. No data supply required.</p>
+
+    </div>
+
+    <div class="mod-nav">
+
+      <a href="#mod1" class="mod-pill m1">Module 1 — Acquisition Intelligence</a>
+
+      <a href="#mod2" class="mod-pill m2">Module 2 — CRM &amp; Lifecycle</a>
+
+      <a href="#mod3" class="mod-pill m3">Module 3 — Acquisition Benchmarks</a>
+
+      <a href="#mod4" class="mod-pill m3">Module 4 — CRM Benchmarks</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- MODULE 1 -->
+
+<section class="module mod1" id="mod1">
+
+  <div class="wrap">
+
+    <div class="module-top">
+
+      <div class="module-icon">📈</div>
+
+      <div class="module-title-group">
+
+        <span class="module-num">Module 1</span>
+
+        <h2 class="module-title">Acquisition Intelligence</h2>
+
+        <div class="module-badges">
+
+          <span class="badge badge-m1">3 Reports Included</span>
+
+          <span class="badge badge-m1">Requires Acquisition Data</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="module-subhead">Every acquisition source has a return. NovaSenti tells you which ones justify it.</p>
+
+    <p class="module-intro">Every week NovaSenti tells you which sources are working and which are not. Act now. Not at month end.</p>
+
+    <div class="report-grid">
+
+      <div class="report-card">
+
+        <span class="report-label">Acquisition Performance</span>
+
+        <ul>
+
+          <li>Uncover which sources are really delivering value and which may be quietly uplifting your overall performance</li>
+
+          <li>Identify channels wasting spend on low-value or non-converting registrations</li>
+
+          <li>A Scale, Watch, Review or Stop signal for every source, updated every week from your data</li>
+
+          <li>Log your actions in minutes. The more you log, the sharper the intelligence gets. Without your actions, NovaSenti can only tell you what happened, not what changed because of you</li>
+
+          <li>The Quality Score evaluates every source across multiple dimensions. Proprietary, calibrated and built for your brand and market. Not a generic formula. Not a dashboard metric. A commercial verdict built on a methodology the market has not seen before</li>
+
+        </ul>
+
+      </div>
+
+      <div class="report-card">
+
+        <span class="report-label">Source Insights</span>
+
+        <ul>
+
+          <li>See which sources are delivering traffic that builds retention and which ones are filling your funnel with users who never return or are purely incentive-driven</li>
+
+          <li>Brand halo and influencer effects factored in before any signal is assigned. SEO fluctuations assessed in market context, not penalised as channel failures</li>
+
+          <li>Scores calibrated by channel type, geographic market, industry vertical and brand positioning. A one-size-fits-all score is just noise dressed up as intelligence</li>
+
+        </ul>
+
+      </div>
+
+      <div class="report-card">
+
+        <span class="report-label">Acquisition Impact &amp; Attribution</span>
+
+        <ul>
+
+          <li>See before and after metrics for every acquisition action you log</li>
+
+          <li>Understand which channel decisions drove real metric movement and which held steady</li>
+
+          <li>Build confidence in your spend with evidence, not assumption. Log your actions and NovaSenti measures exactly what changed, when it changed and what it was worth</li>
+
+          <li>No other acquisition intelligence platform measures impact against an immutable baseline. Most move the goalposts after the fact. NovaSenti locks them before you act. Seasonality, market shifts and external factors are always noted in context so you see what changed and what else was happening when it changed</li>
+
+          <li>Confidence ratings on every action, built from your post-action data. By week 2 you have a reliable rating. By week 4 the rating is strong. Unlike most attribution tools, NovaSenti never overclaims. Weak ratings are always presented as weak</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="module-closer">3 reports. One module. Total acquisition visibility.</p>
+
+    <a href="#contact" class="btn btn-primary">Request a Demo</a>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- MODULE 2 -->
+
+<section class="module mod2" id="mod2">
+
+  <div class="wrap">
+
+    <div class="module-top">
+
+      <div class="module-icon">🔄</div>
+
+      <div class="module-title-group">
+
+        <span class="module-num">Module 2</span>
+
+        <h2 class="module-title">CRM &amp; Lifecycle Intelligence</h2>
+
+        <div class="module-badges">
+
+          <span class="badge badge-m2">3 Reports Included</span>
+
+          <span class="badge badge-m2">Requires User-Level Data</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="module-subhead">Your CRM can only act on what it can see. NovaSenti shows you what it is missing.</p>
+
+    <p class="module-intro">Your customer base never stands still. NovaSenti takes the pulse weekly and shows you exactly where value is at risk before it is gone.</p>
+
+    <div class="report-grid">
+
+      <div class="report-card">
+
+        <span class="report-label">CRM Performance</span>
+
+        <ul>
+
+          <li>Identify which users are disengaging before they lapse</li>
+
+          <li>Monitor your highest value users weekly and catch early at-risk signals before they disengage</li>
+
+          <li>Be alerted to cohorts needing immediate engagement before activity drops. See where CRM spend increases to compensate</li>
+
+          <li>Every user journey starts at onboarding. NovaSenti tracks engagement from first activity through early life, into retention and beyond, surfacing exactly where users disengage and where intervention will have the most commercial impact</li>
+
+          <li>Which segments drive the most cross-sell revenue? Which are being over-invested in for the return they generate? NovaSenti will show you</li>
+
+        </ul>
+
+      </div>
+
+      <div class="report-card">
+
+        <span class="report-label">Lifecycle Insights</span>
+
+        <ul>
+
+          <li>Visualise the full customer journey from first activity through to long-term value or dormancy and pinpoint exactly where engagement drops</li>
+
+          <li>Identify which acquisition sources produce the fastest-to-value cohorts in early life. A powerful insight alone. Even more powerful when combined with Module 1</li>
+
+          <li>Spot dormancy before it happens. Behavioural patterns that precede churn identified early enough to intervene</li>
+
+          <li>Identify which users have the highest LTV potential early and understand what level of CRM investment is justified to develop their engagement. Not all high value users need spend. Not all low value users should be abandoned</li>
+
+        </ul>
+
+      </div>
+
+      <div class="report-card">
+
+        <span class="report-label">CRM Impact &amp; Attribution</span>
+
+        <ul>
+
+          <li>Is your CRM telling you the full story? Retention, reactivation, early life drop-off, incentive dependency, product friction and brand appeal all shape user engagement. NovaSenti connects the dots so you see the real picture, not just metrics in isolation</li>
+
+          <li>Measuring against a frozen baseline captured at the moment you act. Something the market has yet to offer elsewhere. Every measurement that follows is honest, immutable and built on what was actually true when you made your move. Seasonality, sports calendars, market events and external factors are always noted in context. You see what changed and what else was happening when it changed</li>
+
+          <li>Confidence ratings on every CRM action, built from your post-action data shows interventions that drove real re-engagement. By week 2 you have a reliable rating. By week 4 the rating is strong. NovaSenti never overclaims. Weak ratings are always presented as weak</li>
+
+          <li>Never confuse a short term spike with a long term win. NovaSenti surfaces whether increased CRM spend correlated with durable engagement or temporary activity</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="module-closer">3 reports. One module. Total lifecycle visibility.</p>
+
+    <a href="#contact" class="btn btn-primary">Request a Demo</a>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- MODULE 3 -->
+
+<section class="module mod3" id="mod3">
+
+  <div class="wrap">
+
+    <div class="module-top">
+
+      <div class="module-icon">📊</div>
+
+      <div class="module-title-group">
+
+        <span class="module-num">Module 3</span>
+
+        <h2 class="module-title">Acquisition Benchmarks</h2>
+
+        <div class="module-badges">
+
+          <span class="badge badge-addon">Add-On · Standalone</span>
+
+          <span class="badge badge-addon">No Data Supply Required</span>
+
+          <span class="badge badge-addon">No Module 1 or 2 Required</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="module-subhead">Is your acquisition performance strong or just average in disguise?</p>
+
+    <p class="module-intro">Compare your channel performance against businesses operating in the same markets and verticals. Without that context, strong numbers can mask structural weakness.</p>
+
+    <ul class="mod-bullets">
+
+      <li>Planning a move into a new market? Benchmark CPA by channel, geo, vertical and brand positioning before you commit budget</li>
+
+      <li>See what conversion and early retention rates look like across target markets informing your strategy</li>
+
+      <li>See where your CPA, conversion and deposit depth sit against the market range by channel, geo and vertical. Not just a median but your position within the full market distribution</li>
+
+      <li>Identify which channel types underperform versus market median, not just against your own internal average</li>
+
+      <li>Access requires no subscription to Module 1 or 2. No data supply is required</li>
+
+    </ul>
+
+    <a href="#contact" class="btn btn-primary">Request a Demo</a>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- MODULE 4 -->
+
+<section class="module mod4" id="mod4">
+
+  <div class="wrap">
+
+    <div class="module-top">
+
+      <div class="module-icon">🧭</div>
+
+      <div class="module-title-group">
+
+        <span class="module-num">Module 4</span>
+
+        <h2 class="module-title">CRM Benchmarks</h2>
+
+        <div class="module-badges">
+
+          <span class="badge badge-addon">Add-On · Standalone</span>
+
+          <span class="badge badge-addon">No Data Supply Required</span>
+
+          <span class="badge badge-addon">No Module 1 or 2 Required</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="module-subhead">Your engagement metrics look strong. But strong compared to what?</p>
+
+    <p class="module-intro">Know whether your CRM is genuinely outperforming the market. Benchmark conversion, onboarding, early life engagement, retention and ARPU across industry, geo and vertical to see exactly where you stand.</p>
+
+    <ul class="mod-bullets">
+
+      <li>Are your 2nd deposit or further engagement rates competitive? Benchmark early life engagement against businesses in the same vertical and geo. Know whether onboarding drop-off is a product problem, a CRM problem or simply the market norm</li>
+
+      <li>Entering a new market? Understand what conversion, early life engagement and onboarding retention rates look like in your target vertical and geo before you commit. If the market benchmark shows strong early life drop-off or high incentive dependency across the vertical, your CRM model needs to account for that from day one</li>
+
+      <li>Benchmark CRM spend as a percentage of gross revenue against your market and vertical. Know whether your incentive model is driving sustainable engagement or masking the true cost of retention before it shows up in net revenue</li>
+
+      <li>Are high value users being retained and engaged at a rate that justifies their acquisition and ongoing CRM cost? Benchmark high value user engagement, churn rate and ARPU by lifecycle stage against comparable businesses to understand whether your product and CRM model are delivering the value they should</li>
+
+      <li>Reactivation should recover revenue not just volume. Benchmark reactivation rates and post-reactivation ARPU against your market. If reactivation spend is rising while ARPU of reactivated cohorts falls, you have a value problem not a volume problem</li>
+
+      <li>What percentage of users convert to multi-product engagement in your market and vertical? Cross-sell conversion benchmarks by lifecycle stage reveal whether your CRM is capturing available revenue from your existing base or leaving it behind</li>
+
+      <li>Access requires no subscription to Module 1 or 2. No data supply is required</li>
+
+    </ul>
+
+    <a href="#contact" class="btn btn-primary">Request a Demo</a>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- CLOSING -->
+
+<section class="closing">
+
+  <div class="wrap">
+
+    <p>Module 1 and Module 2 together deliver full funnel commercial intelligence. Module 3 and Module 4 are available to any business independently — no commitment to Module 1 or 2 required. Founding Partners activate Module 1 and Module 2. All four modules available to paying clients.</p>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- FOUNDING PARTNER — REMOVE WHEN POC CLOSES -->
+
+<section style="padding:80px 0;">
+
+  <div class="wrap">
+
+    <span style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--m3);margin-bottom:16px;display:block;">Founding Partners</span>
+
+    <div class="founding-inner">
+
+      <h2>Become a Founding Partner</h2>
+
+      <div class="founding-col">
+
+        <h3>What you get</h3>
+
+        <ul>
+
+          <li>3 months free from your first data upload</li>
+
+          <li>30% off list price locked for 24 months post-POC</li>
+
+          <li>Direct input into platform development from day one</li>
+
+          <li>Full access to Module 1 and Module 2 across your live data</li>
+
+        </ul>
+
+      </div>
+
+      <div class="founding-col">
+
+        <h3>What we need from you</h3>
+
+        <ul>
+
+          <li>12 to 24 months of tracked acquisition data across 4 or more active sources</li>
+
+          <li>Anonymised user-level data alongside it</li>
+
+          <li>A weekly data upload commitment for the full POC duration</li>
+
+          <li>A commercially engaged contact available for approximately one hour per week</li>
+
+        </ul>
+
+      </div>
+
+      <div class="founding-footer">
+
+        <a href="#contact" class="btn btn-primary">Apply for Founding Partner Status</a>
+
+        <p class="founding-note">A mutual NDA must be signed before any demo is conducted. FIAT and crypto businesses equally welcome. This programme is strictly limited and will close once the founding cohort is complete.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- END FOUNDING PARTNER -->
+
+<div class="grad-bar"></div>
+
+<!-- CONTACT -->
+
+<section id="contact" style="padding:80px 0;">
+
+  <div class="wrap">
+
+    <span style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--m2);margin-bottom:16px;display:block;">Get in Touch</span>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+
+      <div>
+
+        <h2 style="font-size:36px;font-weight:800;color:var(--text-primary);line-height:1.2;margin-bottom:16px;letter-spacing:-0.5px;">Ready to see what your data is telling you?</h2>
+
+        <p style="font-size:16px;color:var(--text-body);line-height:1.75;margin-bottom:28px;">NovaSenti is available to select businesses through a guided POC programme. If you are a commercial leader who wants clearer signals, we would like to talk.</p>
+
+        <a href="mailto:nicky@novasenti.com" style="display:flex;align-items:center;gap:10px;color:var(--text-body);text-decoration:none;font-size:15px;margin-bottom:10px;">📧 <span>nicky@novasenti.com</span></a>
+
+        <a href="https://www.novasenti.com" style="display:flex;align-items:center;gap:10px;color:var(--text-body);text-decoration:none;font-size:15px;">🌐 <span>novasenti.com</span></a>
+
+      </div>
+
+      <div style="background:var(--bg-card);border-radius:14px;padding:36px;border:1px solid rgba(74,61,255,0.2);">
+
+        <h3 style="font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:24px;">Request a Demo</h3>
+
+        <form id="demoForm">
+
+          <div style="margin-bottom:18px;">
+
+            <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">Your Name</label>
+
+            <input type="text" id="f-name" placeholder="Jane Smith" required style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Inter',sans-serif;outline:none;" />
+
+          </div>
+
+          <div style="margin-bottom:18px;">
+
+            <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">Work Email</label>
+
+            <input type="email" id="f-email" placeholder="you@company.com" required style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Inter',sans-serif;outline:none;" />
+
+          </div>
+
+          <div style="margin-bottom:18px;">
+
+            <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">Company</label>
+
+            <input type="text" id="f-company" placeholder="Your company name" required style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Inter',sans-serif;outline:none;" />
+
+          </div>
+
+          <div style="margin-bottom:18px;">
+
+            <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:8px;">Message <span style="color:var(--text-muted);font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+
+            <textarea id="f-msg" placeholder="Tell us about your data challenges..." style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Inter',sans-serif;outline:none;resize:vertical;min-height:90px;"></textarea>
+
+          </div>
+
+          <button type="submit" style="width:100%;padding:14px;background:var(--grad-btn);color:#fff;font-weight:700;font-size:15px;border-radius:8px;border:none;cursor:pointer;font-family:'Inter',sans-serif;">Send Request</button>
+
+        </form>
+
+        <div id="formConfirm" style="display:none;text-align:center;padding:20px;color:#4ade80;font-weight:700;font-size:16px;">✓ Thank you. We will be in touch shortly.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    <div class="footer-top">
+
+      <span class="footer-brand">NovaSenti · Commercial Intelligence for Profitable Growth</span>
+
+      <nav class="footer-legal">
+
+        <a href="/privacy.html">Privacy Policy</a>
+
+        <a href="/cookies.html">Cookie Policy</a>
+
+        <a href="/terms.html">Terms of Service</a>
+
+      </nav>
+
+      <span class="footer-copy">© 2026 Nova Prospera Ltd · Malta</span>
+
+    </div>
+
+    <div class="footer-cia"><span>CLARITY. INTELLIGENCE. ADVANTAGE.</span></div>
+
+  </div>
+
+</footer>
+
+<a href="#top" id="back-top" aria-label="Back to top">↑</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+
+  emailjs.init('YOUR_EMAILJS_PUBLIC_KEY');
+
+  const backTop = document.getElementById('back-top');
+
+  window.addEventListener('scroll', () => { backTop.classList.toggle('visible', window.scrollY > 400); });
+
+  document.getElementById('demoForm').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById('f-name').value.trim();
+
+    const email = document.getElementById('f-email').value.trim();
+
+    const company = document.getElementById('f-company').value.trim();
+
+    const message = document.getElementById('f-msg').value.trim();
+
+    if (!name || !email || !company) return;
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+
+      from_name: name, from_email: email, company, message,
+
+      to_email: 'nicky@novasenti.com'
+
+    }).finally(() => {
+
+      document.getElementById('demoForm').style.display = 'none';
+
+      document.getElementById('formConfirm').style.display = 'block';
+
+    });
+
+  });
+
+</script>
+
+</body>
+
+</html>

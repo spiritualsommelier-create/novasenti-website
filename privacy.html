@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaSenti | Privacy Policy</title>
+
+  <meta name="robots" content="noindex" />
+
+  <link rel="canonical" href="https://www.novasenti.com/privacy.html" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+
+      --bg-page: #030B2E; --bg-card: #071744;
+
+      --text-primary: #FFFFFF; --text-body: #CBD5E1; --text-secondary: #94A3B8; --text-muted: #64748B;
+
+      --m1: #1565FF; --m2: #4A3DFF; --m3: #A15CFF;
+
+      --grad-btn: linear-gradient(90deg,#1565FF,#4A3DFF);
+
+      --grad-text: linear-gradient(90deg,#1565FF 0%,#4A3DFF 50%,#A15CFF 100%);
+
+      --grad-bar: linear-gradient(90deg,#06164D 0%,#1565FF 35%,#4A3DFF 70%,#A15CFF 100%);
+
+    }
+
+    body { font-family:'Inter',sans-serif; background:var(--bg-page); color:var(--text-body); font-size:16px; line-height:1.8; -webkit-font-smoothing:antialiased; }
+
+    .grad-bar { height:3px; background:var(--grad-bar); width:100%; }
+
+    .wrap { max-width:1200px; margin:0 auto; padding:0 40px; }
+
+    .nav { position:sticky; top:0; z-index:100; background:rgba(3,11,46,0.97); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,0.06); height:72px; display:flex; align-items:center; }
+
+    .nav-inner { width:100%; display:flex; align-items:center; justify-content:space-between; }
+
+    .nav-logo { text-decoration:none; } .nav-logo img { height:48px; display:block; }
+
+    .nav-right { display:flex; align-items:center; gap:16px; }
+
+    .nav-cyi { color:var(--text-body); text-decoration:none; font-size:14px; font-weight:600; padding:8px 16px; border-radius:8px; border:1px solid rgba(161,92,255,0.3); transition:all 0.2s; white-space:nowrap; }
+
+    .nav-cyi:hover { color:#fff; background:rgba(161,92,255,0.1); }
+
+    .nav-login { display:inline-block; padding:9px 20px; background:var(--grad-btn); color:#fff; font-weight:700; font-size:14px; border-radius:8px; text-decoration:none; white-space:nowrap; }
+
+    .content { max-width:820px; margin:0 auto; padding:72px 40px 96px; }
+
+    .page-label { font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--m3); margin-bottom:16px; display:block; }
+
+    h1 { font-size:40px; font-weight:800; color:var(--text-primary); letter-spacing:-0.5px; margin-bottom:8px; line-height:1.15; }
+
+    .version-line { font-size:13px; color:var(--text-muted); margin-bottom:48px; }
+
+    h2 { font-size:20px; font-weight:700; color:var(--text-primary); margin:40px 0 12px; }
+
+    h3 { font-size:16px; font-weight:700; color:var(--text-primary); margin:24px 0 8px; }
+
+    p { margin-bottom:16px; }
+
+    a { color:var(--m1); text-decoration:none; } a:hover { text-decoration:underline; }
+
+    ul { list-style:none; margin:0 0 16px; padding:0; }
+
+    ul li { padding-left:20px; position:relative; margin-bottom:8px; line-height:1.7; }
+
+    ul li::before { content:'→'; position:absolute; left:0; color:var(--m2); font-weight:700; font-size:13px; }
+
+    .table-wrap { overflow-x:auto; margin:20px 0 28px; }
+
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+
+    thead tr { background:rgba(74,61,255,0.15); }
+
+    th { color:var(--text-primary); font-weight:700; padding:12px 16px; text-align:left; font-size:13px; letter-spacing:0.03em; border-bottom:1px solid rgba(255,255,255,0.1); }
+
+    td { padding:12px 16px; border-bottom:1px solid rgba(255,255,255,0.06); vertical-align:top; line-height:1.65; }
+
+    tr:last-child td { border-bottom:none; }
+
+    .contact-box { background:var(--bg-card); border-radius:12px; padding:28px; margin-top:48px; border-left:3px solid var(--m2); }
+
+    .contact-box p { margin:0; font-size:15px; }
+
+    .footer { background:#020920; border-top:1px solid rgba(255,255,255,0.05); padding:44px 0 28px; }
+
+    .footer-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; flex-wrap:wrap; gap:16px; }
+
+    .footer-brand { font-size:14px; color:var(--text-secondary); }
+
+    .footer-legal { display:flex; gap:24px; }
+
+    .footer-legal a { font-size:13px; color:var(--text-secondary); text-decoration:none; } .footer-legal a:hover { color:var(--text-body); }
+
+    .footer-copy { font-size:13px; color:var(--text-secondary); }
+
+    .footer-cia { text-align:center; padding-top:24px; border-top:1px solid rgba(255,255,255,0.04); }
+
+    .footer-cia span { font-size:12px; font-weight:800; letter-spacing:0.22em; background:var(--grad-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+
+    @media (max-width:600px) { .wrap,.content { padding-left:20px; padding-right:20px; } h1 { font-size:30px; } .footer-top { flex-direction:column; align-items:flex-start; } }
+
+  </style>
+
+</head>
+
+<body>
+
+<nav class="nav">
+
+  <div class="wrap nav-inner">
+
+    <a href="/" class="nav-logo"><img src="https://raw.githubusercontent.com/spiritualsommelier-create/novasenti-assets/refs/heads/main/HomePageLogo_CIA.svg" alt="NovaSenti" height="48" /></a>
+
+    <div class="nav-right">
+
+      <a href="/intelligence.html" class="nav-cyi">Choose Your Intelligence</a>
+
+      <a href="https://app.novasenti.com" class="nav-login">Client Login</a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<div class="content">
+
+  <span class="page-label">Legal</span>
+
+  <h1>Privacy Policy</h1>
+
+  <p class="version-line">NovaSenti · Nova Prospera Ltd · Version 1.1</p>
+
+  <h2>1. Who we are</h2>
+
+  <p>Nova Prospera Ltd ("we," "us," "our") operates NovaSenti, a commercial performance intelligence platform. We are registered in Malta, company number MBR: C 111427, registered office: Valletta Buildings, Second Floor, Suite 7, Triq Nofs In-Nhar, Valletta VLT1103, Malta. VAT number: MT31740301.</p>
+
+  <p>Contact: <a href="mailto:nicky@novasenti.com">nicky@novasenti.com</a> / <a href="mailto:help@novasenti.com">help@novasenti.com</a></p>
+
+  <p>We act as data controller for personal data collected through our website (novasenti.com and associated domains) and platform accounts. For operational data uploaded by clients to the NovaSenti platform, we act as data processor on behalf of the client — that processing is governed by the Data Processing Agreement (DPA) between us and the relevant client, not this policy.</p>
+
+  <h2>2. What personal data we collect and why</h2>
+
+  <h3>2.1 Website visitors and enquiries</h3>
+
+  <div class="table-wrap">
+
+    <table>
+
+      <thead><tr><th>Data</th><th>Why we collect it</th><th>Legal basis</th><th>How long we keep it</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Name and email address (contact/lead form)</td><td>To respond to business enquiries and assess whether NovaSenti is a fit for the enquirer's needs</td><td>Legitimate interests (responding to business enquiries; pre-contractual steps)</td><td>Until the enquiry is resolved, or 2 years if no further engagement</td></tr>
+
+        <tr><td>IP address, browser type, pages visited (server logs)</td><td>Platform security, fraud prevention, diagnosing technical issues</td><td>Legitimate interests (platform security and integrity)</td><td>90 days, then deleted</td></tr>
+
+        <tr><td>Session cookies (strictly necessary)</td><td>To maintain authenticated sessions on the platform</td><td>Strictly necessary — no consent required</td><td>Session duration only</td></tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <h3>2.2 Client platform accounts</h3>
+
+  <div class="table-wrap">
+
+    <table>
+
+      <thead><tr><th>Data</th><th>Why we collect it</th><th>Legal basis</th><th>How long we keep it</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Name, business email address, job title</td><td>Account creation and platform access management</td><td>Performance of contract</td><td>Duration of the client relationship + 2 years</td></tr>
+
+        <tr><td>Login timestamps, actions taken in platform</td><td>Security audit trail, support, diagnosing issues</td><td>Legitimate interests (security and support)</td><td>Duration of the client relationship + 1 year</td></tr>
+
+        <tr><td>Business communications (email)</td><td>Managing the client relationship, support queries</td><td>Performance of contract / legitimate interests</td><td>Duration of the client relationship + 2 years</td></tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <h3>2.3 Client operational data — our role as processor</h3>
+
+  <p>When clients upload operational data to NovaSenti (weekly structured data files), we process that data as a data processor on the client's behalf. The client is the data controller for that data. Our processing is governed by the DPA, not this policy.</p>
+
+  <p>Acquisition data (standard): aggregated, source-level data containing cohort-level metrics only. No individual player or customer identifiers are included. This data does not typically constitute Personal Data.</p>
+
+  <p>CRM data (optional, separately activated): anonymised individual-level data (e.g. per-player activity records with hashed identifiers). Where CRM data is elected, clients are responsible for anonymising the data before upload. Processing is governed by the DPA and any applicable DPA addendum.</p>
+
+  <p>Benchmarking: we use aggregated, anonymised client data to develop cross-client market benchmarks. Once anonymised, this data is no longer Personal Data and we retain and use it as an independent controller for the purpose of improving and delivering benchmark outputs. See the DPA for the anonymisation standard applied.</p>
+
+  <h2>3. How we use personal data</h2>
+
+  <p>We use personal data only for the purposes for which it was collected (as described in section 2 above) and for the following compatible purposes:</p>
+
+  <ul>
+
+    <li>Delivering, maintaining, and improving the NovaSenti platform and modules</li>
+
+    <li>Communicating with clients and prospective clients about the platform, their account, and support queries</li>
+
+    <li>Meeting our legal and regulatory obligations (including GDPR compliance)</li>
+
+    <li>Protecting the security and integrity of the platform</li>
+
+  </ul>
+
+  <p>We do not use personal data for automated decision-making that produces legal or similarly significant effects, and we do not use personal data for advertising or marketing profiling.</p>
+
+  <h2>4. Who we share data with</h2>
+
+  <p>We do not sell personal data. We share personal data only as follows:</p>
+
+  <div class="table-wrap">
+
+    <table>
+
+      <thead><tr><th>Recipient</th><th>What we share</th><th>Why</th><th>Location</th><th>Safeguard</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Xano Inc.</td><td>Client data (processed via platform API)</td><td>Backend infrastructure and computation</td><td>USA</td><td>Standard Contractual Clauses (SCCs)</td></tr>
+
+        <tr><td>Bubble Group Inc.</td><td>Client account data (accessed via platform frontend)</td><td>Frontend platform hosting</td><td>USA</td><td>SCCs</td></tr>
+
+        <tr><td>Zoho Corporation (EU)</td><td>Business email communications</td><td>Email hosting and delivery</td><td>EU (Netherlands)</td><td>EU data centre — no transfer outside EEA</td></tr>
+
+        <tr><td>EmailJS Pte. Ltd.</td><td>Enquirer name and email (contact form submissions only)</td><td>Routing website enquiry forms to our inbox</td><td>Singapore (onward to USA possible)</td><td>SCCs; data limited to contact form data only</td></tr>
+
+        <tr><td>Law enforcement / regulators</td><td>As required by applicable law</td><td>Legal obligation</td><td>—</td><td>Disclosure limited to what is legally required</td></tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <h2>5. International transfers</h2>
+
+  <p>Xano and Bubble are US-based. Transfers of personal data to these sub-processors are made under Standard Contractual Clauses (Module 2) approved by the European Commission. EmailJS is Singapore-based; transfers are made under SCCs. Zoho processes data within the EU; no transfer mechanism is required. We will notify affected parties if any transfer mechanism is invalidated or materially affected by supervisory authority guidance.</p>
+
+  <h2>6. Your rights under GDPR</h2>
+
+  <p>You have the following rights in respect of personal data we hold about you as a controller:</p>
+
+  <ul>
+
+    <li><strong style="color:var(--text-primary);">Access:</strong> request a copy of the personal data we hold about you.</li>
+
+    <li><strong style="color:var(--text-primary);">Rectification:</strong> ask us to correct inaccurate or incomplete data.</li>
+
+    <li><strong style="color:var(--text-primary);">Erasure:</strong> ask us to delete your personal data where there is no overriding legal basis for continued processing.</li>
+
+    <li><strong style="color:var(--text-primary);">Restriction:</strong> ask us to restrict processing while a dispute is resolved.</li>
+
+    <li><strong style="color:var(--text-primary);">Objection:</strong> object to processing based on legitimate interests. We will cease processing unless we can demonstrate compelling legitimate grounds.</li>
+
+    <li><strong style="color:var(--text-primary);">Portability:</strong> receive your data in a machine-readable format where processing is based on consent or contract and carried out automatically.</li>
+
+    <li><strong style="color:var(--text-primary);">Withdraw consent:</strong> where processing is based on consent, withdraw it at any time without affecting prior processing.</li>
+
+  </ul>
+
+  <p>To exercise any right, contact us at <a href="mailto:help@novasenti.com">help@novasenti.com</a>. We will respond within 30 days (extendable by 2 months for complex requests with notice). You also have the right to lodge a complaint with the Malta Information and Data Protection Commissioner (IDPC) at <a href="https://idpc.org.mt" target="_blank" rel="noopener">idpc.org.mt</a>, or with your local supervisory authority if you are based in another EU member state.</p>
+
+  <p>Note on client operational data: where personal data forms part of data uploaded by a client to the platform, we process it as a data processor on the client's behalf. Data subject rights requests relating to such data should be directed to the client (the data controller), who will engage us as necessary under the DPA.</p>
+
+  <h2>7. Cookies</h2>
+
+  <p>We use strictly necessary cookies only to operate the platform. We do not use analytics, advertising, or tracking cookies. No consent banner is displayed because consent is not required for strictly necessary cookies. If we introduce any non-essential cookies in future, we will update our Cookie Policy and obtain consent before setting them. See our <a href="/cookies.html">Cookie Policy</a> for full detail.</p>
+
+  <h2>8. Security</h2>
+
+  <p>We maintain appropriate technical and organisational security measures including TLS encryption in transit, authenticated access, server-side tenant isolation, access logging, and regular security reviews. We will notify affected clients and the relevant supervisory authority of any personal data breach in accordance with our GDPR obligations.</p>
+
+  <h2>9. Children</h2>
+
+  <p>The NovaSenti platform is a B2B service intended for business users only. We do not knowingly collect personal data from individuals under 18. If we become aware that we have inadvertently collected such data, we will delete it promptly.</p>
+
+  <h2>10. Changes to this policy</h2>
+
+  <p>We will update this policy when our data practices change. The current version and date are shown at the top. Material changes will be notified to registered clients by email at least 14 days before they take effect. The most recent version is always available at <a href="https://www.novasenti.com/privacy.html">novasenti.com</a>.</p>
+
+  <div class="contact-box">
+
+    <p>Nova Prospera Ltd · Valletta Buildings, Second Floor, Suite 7, Triq Nofs In-Nhar, Valletta VLT1103, Malta · MBR: C 111427 · <a href="mailto:help@novasenti.com">help@novasenti.com</a></p>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    <div class="footer-top">
+
+      <span class="footer-brand">NovaSenti · Commercial Intelligence for Profitable Growth</span>
+
+      <nav class="footer-legal">
+
+        <a href="/privacy.html">Privacy Policy</a>
+
+        <a href="/cookies.html">Cookie Policy</a>
+
+        <a href="/terms.html">Terms of Service</a>
+
+      </nav>
+
+      <span class="footer-copy">© 2026 Nova Prospera Ltd · Malta</span>
+
+    </div>
+
+    <div class="footer-cia"><span>CLARITY. INTELLIGENCE. ADVANTAGE.</span></div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>

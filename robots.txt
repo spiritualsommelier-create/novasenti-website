@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /version-test
+
+Sitemap: https://www.novasenti.com/sitemap.xml

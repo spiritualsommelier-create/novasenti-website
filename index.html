@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaSenti | Full Funnel Commercial Intelligence Platform</title>
+
+  <meta name="description" content="NovaSenti connects acquisition quality, customer lifecycle and commercial impact in one platform. Full funnel commercial intelligence. One weekly upload. No analysts. No integration." />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.novasenti.com/" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:title" content="NovaSenti | Full Funnel Commercial Intelligence Platform" />
+
+  <meta property="og:description" content="NovaSenti connects acquisition quality, customer lifecycle and commercial impact in one platform." />
+
+  <meta property="og:url" content="https://www.novasenti.com/" />
+
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NovaSenti","legalName":"Nova Prospera Ltd","url":"https://www.novasenti.com","email":"nicky@novasenti.com","description":"Full funnel commercial intelligence platform."}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+
+      --bg-page: #030B2E;
+
+      --bg-card: #071744;
+
+      --bg-card-hover: #0c1f56;
+
+      --text-primary: #FFFFFF;
+
+      --text-body: #CBD5E1;
+
+      --text-secondary: #94A3B8;
+
+      --text-muted: #64748B;
+
+      --m1: #1565FF;
+
+      --m2: #4A3DFF;
+
+      --m3: #A15CFF;
+
+      --grad-btn: linear-gradient(90deg, #1565FF, #4A3DFF);
+
+      --grad-text: linear-gradient(90deg, #1565FF 0%, #4A3DFF 50%, #A15CFF 100%);
+
+      --grad-bar: linear-gradient(90deg, #06164D 0%, #1565FF 35%, #4A3DFF 70%, #A15CFF 100%);
+
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body { font-family: 'Inter', sans-serif; background: var(--bg-page); color: var(--text-body); font-size: 15px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* UTILITIES */
+
+    .grad-bar { height: 3px; background: var(--grad-bar); width: 100%; }
+
+    .grad-text { background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+    /* BUTTONS */
+
+    .btn { display: inline-block; padding: 13px 28px; font-weight: 700; font-size: 15px; border-radius: 8px; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: 'Inter', sans-serif; }
+
+    .btn-primary { background: var(--grad-btn); color: #fff; }
+
+    .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    .btn-secondary { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.7); }
+
+    .btn-ghost-violet { background: transparent; color: var(--m3); border: 1.5px solid rgba(161,92,255,0.5); }
+
+    .btn-ghost-violet:hover { background: rgba(161,92,255,0.1); }
+
+    /* ── NAV ── */
+
+    .nav {
+
+      position: sticky; top: 0; z-index: 100;
+
+      background: rgba(3,11,46,0.97);
+
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+
+      height: 72px; display: flex; align-items: center;
+
+    }
+
+    .nav-inner {
+
+      width: 100%; display: flex;
+
+      align-items: center; justify-content: space-between;
+
+    }
+
+    .nav-logo { text-decoration: none; display: flex; align-items: center; }
+
+    .nav-logo img { height: 48px; display: block; }
+
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+
+    .nav-cyi {
+
+      color: var(--text-body); text-decoration: none;
+
+      font-size: 14px; font-weight: 600;
+
+      padding: 8px 16px; border-radius: 8px;
+
+      border: 1px solid rgba(161,92,255,0.3);
+
+      transition: all 0.2s; white-space: nowrap;
+
+    }
+
+    .nav-cyi:hover { color: #fff; background: rgba(161,92,255,0.1); border-color: rgba(161,92,255,0.6); }
+
+    .nav-login {
+
+      display: inline-block;
+
+      padding: 9px 20px;
+
+      background: var(--grad-btn);
+
+      color: #fff; font-weight: 700; font-size: 14px;
+
+      border-radius: 8px; text-decoration: none;
+
+      border: none; transition: opacity 0.2s;
+
+      white-space: nowrap;
+
+    }
+
+    .nav-login:hover { opacity: 0.85; }
+
+    @media (max-width: 600px) {
+
+      .nav-cyi { font-size: 12px; padding: 7px 10px; }
+
+      .nav-login { font-size: 12px; padding: 8px 14px; }
+
+      .nav-logo img { height: 38px; }
+
+    }
+
+    /* ── HERO ── */
+
+    .hero { padding: 88px 0 80px; }
+
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+
+    .badge-pill {
+
+      display: inline-flex; align-items: center; gap: 8px;
+
+      background: rgba(161,92,255,0.12);
+
+      border: 1px solid rgba(161,92,255,0.35);
+
+      border-radius: 999px; padding: 6px 16px; margin-bottom: 28px;
+
+    }
+
+    .badge-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--m3); flex-shrink: 0; }
+
+    .badge-pill span { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--m3); }
+
+    h1 { font-size: 58px; font-weight: 800; color: var(--text-primary); line-height: 1.05; letter-spacing: -2px; margin-bottom: 24px; }
+
+    .hero-sub { font-size: 17px; line-height: 1.8; color: var(--text-body); margin-bottom: 36px; }
+
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* ── PROOF CARDS — horizontal blocks like old page ── */
+
+    .proof-stack { display: flex; flex-direction: column; gap: 0; }
+
+    .proof-block {
+
+      display: flex; align-items: flex-start; gap: 20px;
+
+      padding: 22px 24px;
+
+      border-radius: 12px;
+
+      margin-bottom: 10px;
+
+      background: var(--bg-card);
+
+      transition: background 0.2s, transform 0.2s;
+
+      position: relative; overflow: hidden;
+
+      border-left: 3px solid transparent;
+
+    }
+
+    .proof-block:hover { background: var(--bg-card-hover); transform: translateX(4px); }
+
+    .proof-block:nth-child(1) { border-left-color: var(--m1); }
+
+    .proof-block:nth-child(2) { border-left-color: var(--m2); }
+
+    .proof-block:nth-child(3) { border-left-color: var(--m3); }
+
+    .proof-block:nth-child(4) { border-left-color: var(--m3); }
+
+    .proof-block:nth-child(5) { border-left-color: var(--m2); }
+
+    .proof-icon-box {
+
+      width: 44px; height: 44px; border-radius: 10px;
+
+      display: flex; align-items: center; justify-content: center;
+
+      font-size: 20px; flex-shrink: 0;
+
+    }
+
+    .proof-block:nth-child(1) .proof-icon-box { background: rgba(21,101,255,0.15); }
+
+    .proof-block:nth-child(2) .proof-icon-box { background: rgba(74,61,255,0.18); }
+
+    .proof-block:nth-child(3) .proof-icon-box { background: rgba(161,92,255,0.15); }
+
+    .proof-block:nth-child(4) .proof-icon-box { background: rgba(161,92,255,0.15); }
+
+    .proof-block:nth-child(5) .proof-icon-box { background: rgba(74,61,255,0.15); }
+
+    .proof-label {
+
+      font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
+
+      text-transform: uppercase; margin-bottom: 4px; display: block;
+
+    }
+
+    .proof-block:nth-child(1) .proof-label { color: var(--m1); }
+
+    .proof-block:nth-child(2) .proof-label { color: var(--m2); }
+
+    .proof-block:nth-child(3) .proof-label { color: var(--m3); }
+
+    .proof-block:nth-child(4) .proof-label { color: var(--m3); }
+
+    .proof-block:nth-child(5) .proof-label { color: var(--m2); }
+
+    .proof-block p { font-size: 13px; color: var(--text-body); line-height: 1.65; margin: 0; }
+
+    .proof-block a.proof-link {
+
+      display: inline-block; margin-top: 6px;
+
+      font-size: 12px; font-weight: 700; color: var(--m3);
+
+      text-decoration: none; letter-spacing: 0.04em;
+
+    }
+
+    .proof-block a.proof-link:hover { text-decoration: underline; }
+
+    /* ── INTELLIGENCE SECTION — four horizontal cards like old page ── */
+
+    .intelligence-section { padding: 80px 0; }
+
+    .intelligence-section .sec-header { text-align: center; margin-bottom: 48px; }
+
+    .intelligence-section .sec-header h2 { font-size: 38px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; margin-bottom: 12px; }
+
+    .intelligence-section .sec-header p { font-size: 17px; color: var(--text-body); }
+
+    .intel-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+    .intel-card {
+
+      background: var(--bg-card); border-radius: 14px;
+
+      padding: 28px 22px; position: relative; overflow: hidden;
+
+      transition: all 0.25s; cursor: pointer; text-decoration: none;
+
+      display: block;
+
+    }
+
+    .intel-card:hover { background: var(--bg-card-hover); transform: translateY(-5px); }
+
+    .intel-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+
+    .intel-card.c1::before { background: var(--m1); }
+
+    .intel-card.c2::before { background: var(--m2); }
+
+    .intel-card.c3::before { background: var(--m3); }
+
+    .intel-card.c4::before { background: linear-gradient(90deg, var(--m2), var(--m3)); }
+
+    .intel-icon-box {
+
+      width: 48px; height: 48px; border-radius: 12px;
+
+      display: flex; align-items: center; justify-content: center;
+
+      font-size: 22px; margin-bottom: 18px;
+
+    }
+
+    .intel-card.c1 .intel-icon-box { background: rgba(21,101,255,0.15); }
+
+    .intel-card.c2 .intel-icon-box { background: rgba(74,61,255,0.18); }
+
+    .intel-card.c3 .intel-icon-box { background: rgba(161,92,255,0.15); }
+
+    .intel-card.c4 .intel-icon-box { background: rgba(161,92,255,0.12); }
+
+    .intel-label { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 8px; display: block; }
+
+    .intel-card.c1 .intel-label { color: var(--m1); }
+
+    .intel-card.c2 .intel-label { color: var(--m2); }
+
+    .intel-card.c3 .intel-label { color: var(--m3); }
+
+    .intel-card.c4 .intel-label { color: var(--m3); }
+
+    .intel-card h3 { font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px; line-height: 1.3; }
+
+    .intel-card p { font-size: 13px; color: var(--text-body); line-height: 1.65; }
+
+    .intel-card .card-arrow { display: block; margin-top: 16px; font-size: 13px; font-weight: 700; }
+
+    .intel-card.c1 .card-arrow { color: var(--m1); }
+
+    .intel-card.c2 .card-arrow { color: var(--m2); }
+
+    .intel-card.c3 .card-arrow { color: var(--m3); }
+
+    .intel-card.c4 .card-arrow { color: var(--m3); }
+
+    .intel-cta { text-align: center; margin-top: 36px; }
+
+    /* ── ABOUT ── */
+
+    .about-section { padding: 80px 0; background: linear-gradient(180deg, rgba(74,61,255,0.06) 0%, rgba(161,92,255,0.03) 100%); }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+
+    .about-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--m3); margin-bottom: 16px; display: block; }
+
+    .about-left h2 { font-size: 42px; font-weight: 800; color: var(--text-primary); line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px; }
+
+    .name-line { font-size: 16px; color: var(--text-body); margin-bottom: 4px; line-height: 1.7; }
+
+    .name-line strong { color: var(--text-primary); }
+
+    .about-body { font-size: 16px; color: var(--text-body); line-height: 1.8; margin: 20px 0 28px; }
+
+    .about-right {
+
+      background: var(--bg-card); border-radius: 14px; padding: 36px;
+
+      position: relative; overflow: hidden;
+
+    }
+
+    .about-right::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad-bar); }
+
+    .surfaces-label { font-size: 14px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--m3); margin-bottom: 20px; display: block; }
+
+    .surfaces-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+    .surfaces-list li { font-size: 16px; color: var(--text-body); padding-left: 24px; position: relative; line-height: 1.7; }
+
+    .surfaces-list li::before { content: '→'; position: absolute; left: 0; color: var(--m2); font-weight: 700; }
+
+    /* ── WHO IT'S FOR ── */
+
+    .who-section { padding: 80px 0; }
+
+    .who-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--m1); margin-bottom: 16px; display: block; }
+
+    .who-section h2 { font-size: 28px; font-weight: 800; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.5px; }
+
+    .who-intro { font-size: 15px; color: var(--text-body); max-width: 700px; line-height: 1.7; margin-bottom: 8px; }
+
+    .who-actions { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 36px; }
+
+    .who-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+    .who-card {
+
+      background: var(--bg-card); border-radius: 14px;
+
+      padding: 28px 22px; position: relative; overflow: hidden;
+
+      transition: all 0.25s;
+
+    }
+
+    .who-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); }
+
+    .who-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; }
+
+    .who-card.w1::after { background: var(--m1); }
+
+    .who-card.w2::after { background: var(--m2); }
+
+    .who-card.w3::after { background: var(--m3); }
+
+    .who-icon-box { width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+
+    .who-card.w1 .who-icon-box { background: rgba(21,101,255,0.15); }
+
+    .who-card.w2 .who-icon-box { background: rgba(74,61,255,0.18); }
+
+    .who-card.w3 .who-icon-box { background: rgba(161,92,255,0.15); }
+
+    .who-card strong { display: block; color: var(--text-primary); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+
+    .who-card p { font-size: 13px; color: var(--text-body); line-height: 1.65; }
+
+    /* ── FOUNDING ── */
+
+    .founding-section { padding: 80px 0; }
+
+    .founding-box {
+
+      background: linear-gradient(135deg, rgba(74,61,255,0.1) 0%, rgba(161,92,255,0.08) 100%);
+
+      border: 1px solid rgba(161,92,255,0.25);
+
+      border-radius: 16px; padding: 52px 56px;
+
+      position: relative; overflow: hidden;
+
+    }
+
+    .founding-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad-bar); }
+
+    .founding-box::after { content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(161,92,255,0.1) 0%, transparent 70%); pointer-events: none; }
+
+    .founding-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--m3); margin-bottom: 16px; display: block; }
+
+    .founding-box h2 { font-size: 32px; font-weight: 800; color: var(--text-primary); margin-bottom: 16px; letter-spacing: -0.5px; }
+
+    .founding-box p { font-size: 16px; color: var(--text-body); line-height: 1.75; max-width: 680px; margin-bottom: 28px; }
+
+    .founding-note { font-size: 13px; color: var(--text-secondary); font-style: italic; margin-top: 16px; display: block; }
+
+    /* ── CONTACT ── */
+
+    .contact-section { padding: 80px 0; }
+
+    .contact-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--m2); margin-bottom: 16px; display: block; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+
+    .contact-left h2 { font-size: 36px; font-weight: 800; color: var(--text-primary); line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+
+    .contact-left p { font-size: 16px; color: var(--text-body); line-height: 1.75; margin-bottom: 28px; }
+
+    .contact-detail { display: flex; align-items: center; gap: 10px; color: var(--text-body); text-decoration: none; font-size: 15px; margin-bottom: 10px; transition: color 0.2s; }
+
+    .contact-detail:hover { color: #fff; }
+
+    .contact-form { background: var(--bg-card); border-radius: 14px; padding: 36px; border: 1px solid rgba(74,61,255,0.2); }
+
+    .contact-form h3 { font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 24px; }
+
+    .form-group { margin-bottom: 18px; }
+
+    .form-group label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px; }
+
+    .form-group input, .form-group textarea { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 14px; color: #fff; font-size: 15px; font-family: 'Inter', sans-serif; outline: none; transition: border-color 0.2s; }
+
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--m2); }
+
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); }
+
+    .form-group textarea { resize: vertical; min-height: 90px; }
+
+    .form-submit { width: 100%; padding: 14px; background: var(--grad-btn); color: #fff; font-weight: 700; font-size: 15px; border-radius: 8px; border: none; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.2s; }
+
+    .form-submit:hover { opacity: 0.85; }
+
+    .form-confirm { display: none; text-align: center; padding: 20px; color: #4ade80; font-weight: 700; font-size: 16px; }
+
+    /* ── FOOTER ── */
+
+    .footer { background: #020920; border-top: 1px solid rgba(255,255,255,0.05); padding: 44px 0 28px; }
+
+    .footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; flex-wrap: wrap; gap: 16px; }
+
+    .footer-brand { font-size: 14px; color: var(--text-secondary); }
+
+    .footer-legal { display: flex; gap: 24px; }
+
+    .footer-legal a { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+
+    .footer-legal a:hover { color: var(--text-body); }
+
+    .footer-copy { font-size: 13px; color: var(--text-secondary); }
+
+    .footer-cia { text-align: center; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.04); }
+
+    .footer-cia span { font-size: 12px; font-weight: 800; letter-spacing: 0.22em; background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* ── BACK TO TOP ── */
+
+    #back-top {
+
+      position: fixed; bottom: 32px; right: 32px;
+
+      width: 44px; height: 44px; border-radius: 50%;
+
+      background: var(--grad-btn);
+
+      color: #fff; font-size: 18px; font-weight: 700;
+
+      display: none; align-items: center; justify-content: center;
+
+      text-decoration: none; z-index: 200;
+
+      box-shadow: 0 4px 20px rgba(21,101,255,0.4);
+
+      transition: opacity 0.2s, transform 0.2s;
+
+    }
+
+    #back-top:hover { opacity: 0.85; transform: translateY(-2px); }
+
+    #back-top.visible { display: flex; }
+
+    /* ── RESPONSIVE ── */
+
+    @media (max-width: 960px) {
+
+      .hero-grid { grid-template-columns: 1fr; gap: 52px; }
+
+      h1 { font-size: 42px; }
+
+      .intel-grid { grid-template-columns: 1fr 1fr; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+
+      .who-grid { grid-template-columns: 1fr 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+
+      .founding-box { padding: 36px 28px; }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .wrap { padding: 0 20px; }
+
+      h1 { font-size: 34px; letter-spacing: -1px; }
+
+      .intel-grid { grid-template-columns: 1fr; }
+
+      .who-grid { grid-template-columns: 1fr; }
+
+      .hero-ctas { flex-direction: column; }
+
+      .footer-top { flex-direction: column; align-items: flex-start; }
+
+      .about-left h2 { font-size: 32px; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="top"></div>
+
+<!-- ── NAV ── -->
+
+<nav class="nav">
+
+  <div class="wrap nav-inner">
+
+    <a href="/" class="nav-logo" aria-label="NovaSenti Home">
+
+      <img src="https://raw.githubusercontent.com/spiritualsommelier-create/novasenti-assets/refs/heads/main/HomePageLogo_CIA.svg" alt="NovaSenti" height="48" />
+
+    </a>
+
+    <div class="nav-right">
+
+      <a href="/intelligence.html" class="nav-cyi">Choose Your Intelligence</a>
+
+      <a href="https://app.novasenti.com" class="nav-login">Client Login</a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- ── HERO ── -->
+
+<section class="hero" id="top-anchor">
+
+  <div class="wrap">
+
+    <div class="hero-grid">
+
+      <!-- Left column -->
+
+      <div>
+
+        <div class="badge-pill">
+
+          <span class="dot"></span>
+
+          <span>Commercial Intelligence Platform</span>
+
+        </div>
+
+        <h1>See What <span class="grad-text">Others Miss.</span></h1>
+
+        <p class="hero-sub">NovaSenti connects acquisition quality, customer lifecycle and commercial impact in one platform. It surfaces clear action prompts from your data every week. One simple weekly upload is all it takes. No analysts. No integration. No guesswork. No Tunnel Vision. Full Funnel Vision.</p>
+
+        <div class="hero-ctas">
+
+          <a href="#contact" class="btn btn-primary">Request a Demo</a>
+
+          <a href="https://app.novasenti.com" class="btn btn-secondary">Client Login →</a>
+
+        </div>
+
+      </div>
+
+      <!-- Right column — proof blocks -->
+
+      <div class="proof-stack">
+
+        <div class="proof-block">
+
+          <div class="proof-icon-box">🔗</div>
+
+          <div>
+
+            <span class="proof-label">Full Funnel. One Platform.</span>
+
+            <p>Module 1 delivers acquisition intelligence. Module 2 delivers CRM and lifecycle intelligence. Together they give you full funnel vision. Each is powerful alone. Combined they are unmatched. <a href="/intelligence.html" class="proof-link">Explore the modules →</a></p>
+
+          </div>
+
+        </div>
+
+        <div class="proof-block">
+
+          <div class="proof-icon-box">🔄</div>
+
+          <div>
+
+            <span class="proof-label">Already Have Lifecycle Stages? No Lifecycle Stages At All?</span>
+
+            <p>NovaSenti computes them directly from your data either way. Run them alongside your existing framework and find the gaps. Or let NovaSenti build the picture from scratch.</p>
+
+          </div>
+
+        </div>
+
+        <div class="proof-block">
+
+          <div class="proof-icon-box">📡</div>
+
+          <div>
+
+            <span class="proof-label">Clear Signals. Every Week.</span>
+
+            <p>Smarter budget allocation on acquisition. Stronger retention on your customer base. NovaSenti catches underperforming sources early and flags lifecycle gaps before they cost you.</p>
+
+          </div>
+
+        </div>
+
+        <div class="proof-block">
+
+          <div class="proof-icon-box">🔒</div>
+
+          <div>
+
+            <span class="proof-label">Honest Attribution.</span>
+
+            <p>Every commercial action measured against a baseline locked at the moment you log it. Know what actually moved on acquisition and across your customer lifecycle and what it was worth. Seasonality, market events and external factors are always noted in context. You see what changed and what else was happening when it changed.</p>
+
+          </div>
+
+        </div>
+
+        <div class="proof-block">
+
+          <div class="proof-icon-box">⚡</div>
+
+          <div>
+
+            <span class="proof-label">One Upload. Instant Intelligence.</span>
+
+            <p>What takes other platforms months of integration and a data team to achieve, NovaSenti delivers from a single weekly upload.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- ── INTELLIGENCE SECTION — four horizontal cards ── -->
+
+<section class="intelligence-section">
+
+  <div class="wrap">
+
+    <div class="sec-header">
+
+      <h2>Choose Your <span class="grad-text">Intelligence</span></h2>
+
+      <p>NovaSenti is modular. Start where your business needs it most.</p>
+
+    </div>
+
+    <div class="intel-grid">
+
+      <a href="/intelligence.html#mod1" class="intel-card c1">
+
+        <div class="intel-icon-box">📈</div>
+
+        <span class="intel-label">Module 1</span>
+
+        <h3>Acquisition Intelligence</h3>
+
+        <p>Every acquisition source scored on quality, not just volume. Scale what earns. Stop what doesn't. Act before the next budget cycle.</p>
+
+        <span class="card-arrow">See Module 1 →</span>
+
+      </a>
+
+      <a href="/intelligence.html#mod2" class="intel-card c2">
+
+        <div class="intel-icon-box">🔄</div>
+
+        <span class="intel-label">Module 2</span>
+
+        <h3>CRM &amp; Lifecycle Intelligence</h3>
+
+        <p>Your customer base never stands still. NovaSenti takes the pulse weekly and shows you exactly where value is at risk before it is gone.</p>
+
+        <span class="card-arrow">See Module 2 →</span>
+
+      </a>
+
+      <a href="/intelligence.html#mod3" class="intel-card c3">
+
+        <div class="intel-icon-box">📊</div>
+
+        <span class="intel-label">Module 3 · Standalone</span>
+
+        <h3>Acquisition Benchmarks</h3>
+
+        <p>Is your acquisition performance strong or just average in disguise? No data supply required. No Module 1 or 2 needed.</p>
+
+        <span class="card-arrow">See Module 3 →</span>
+
+      </a>
+
+      <a href="/intelligence.html#mod4" class="intel-card c4">
+
+        <div class="intel-icon-box">🧭</div>
+
+        <span class="intel-label">Module 4 · Standalone</span>
+
+        <h3>CRM Benchmarks</h3>
+
+        <p>Your engagement metrics look strong. But strong compared to what? No data supply required. No Module 1 or 2 needed.</p>
+
+        <span class="card-arrow">See Module 4 →</span>
+
+      </a>
+
+    </div>
+
+    <div class="intel-cta">
+
+      <a href="/intelligence.html" class="btn btn-ghost-violet">View Full Module Details →</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- ── ABOUT ── -->
+
+<section class="about-section">
+
+  <div class="wrap">
+
+    <div class="about-grid">
+
+      <div class="about-left">
+
+        <span class="about-eyebrow">About NovaSenti</span>
+
+        <h2>The name tells <span class="grad-text">the story.</span></h2>
+
+        <p class="name-line"><strong>Nova</strong> — a new star. New insight. Breakthrough clarity.</p>
+
+        <p class="name-line"><strong>Senti</strong> — perception. Sensing. Awareness.</p>
+
+        <p class="about-body">NovaSenti gives businesses a new sense. The ability to perceive commercial signals that were always in their data but never surfaced clearly enough to act on. Launching in iGaming. Built for eCommerce, Subscription SaaS and Fintech too.</p>
+
+        <a href="#contact" class="btn btn-ghost-violet">Request a Demo</a>
+
+      </div>
+
+      <div class="about-right">
+
+        <span class="surfaces-label">What NovaSenti Surfaces</span>
+
+        <ul class="surfaces-list">
+
+          <li>Which acquisition sources are delivering durable customers and which are delivering poor quality or incentive-driven traffic</li>
+
+          <li>Where the customer lifecycle is breaking down and which cohorts are at risk before they lapse</li>
+
+          <li>Whether CRM spend is generating genuine engagement or temporary incentive-driven activity</li>
+
+          <li>Where cross-sell opportunity exists across your existing customer base</li>
+
+          <li>How your commercial performance compares to businesses operating in the same markets and verticals</li>
+
+          <li>Whether the changes you made actually moved the metrics that matter</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- ── WHO IT'S FOR ── -->
+
+<section class="who-section">
+
+  <div class="wrap">
+
+    <span class="who-eyebrow">Who It's For</span>
+
+    <h2>Built for the people making commercial decisions.</h2>
+
+    <p class="who-intro">CEOs, CMOs, CCOs, Heads of CRM and Performance Marketing leads who want commercial intelligence that goes beyond what any single data team can see.</p>
+
+    <p class="who-actions">Allocate budget with confidence. Retain the right customers. Know exactly what your commercial actions delivered.</p>
+
+    <div class="who-grid">
+
+      <div class="who-card w1">
+
+        <div class="who-icon-box">🎯</div>
+
+        <strong>iGaming</strong>
+
+        <p>From acquisition quality to user lifecycle. Full funnel intelligence for multi-brand, multi-market businesses.</p>
+
+      </div>
+
+      <div class="who-card w2">
+
+        <div class="who-icon-box">💳</div>
+
+        <strong>Fintech</strong>
+
+        <p>Channel performance, activation rates and customer value in one view.</p>
+
+      </div>
+
+      <div class="who-card w3">
+
+        <div class="who-icon-box">🛒</div>
+
+        <strong>eCommerce</strong>
+
+        <p>Know which sources deliver your best customers. Understand their purchase lifecycle and spot drop-off before it becomes churn.</p>
+
+      </div>
+
+      <div class="who-card w3">
+
+        <div class="who-icon-box">🔁</div>
+
+        <strong>Subscription SaaS</strong>
+
+        <p>Spot churn risk early. Retain the customers worth keeping.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="grad-bar"></div>
+
+<!-- ── FOUNDING PARTNER — REMOVE WHEN POC CLOSES ── -->
+
+<section class="founding-section">
+
+  <div class="wrap">
+
+    <div class="founding-box">
+
+      <span class="founding-eyebrow">Founding Partners</span>
+
+      <h2>Become a Founding Partner</h2>
+
+      <p>NovaSenti is currently accepting a strictly limited number of POC partners across all supported verticals. 3 months free. 30% off list price locked for 24 months. Your feedback shapes the platform from day one. FIAT and crypto businesses equally welcome.</p>
+
+      <a href="#contact" class="btn btn-primary">Apply for Founding Partner Status</a>
+
+      <span class="founding-note">A mutual NDA must be signed before any demo is conducted.</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ── END FOUNDING PARTNER ── -->
+
+<div class="grad-bar"></div>
+
+<!-- ── CONTACT ── -->
+
+<section class="contact-section" id="contact">
+
+  <div class="wrap">
+
+    <span class="contact-eyebrow">Get in Touch</span>
+
+    <div class="contact-grid">
+
+      <div class="contact-left">
+
+        <h2>Ready to see what your data is telling you?</h2>
+
+        <p>NovaSenti is available to select businesses through a guided POC programme. If you are a commercial leader who wants clearer signals, we would like to talk.</p>
+
+        <a href="mailto:nicky@novasenti.com" class="contact-detail">📧 <span>nicky@novasenti.com</span></a>
+
+        <a href="https://www.novasenti.com" class="contact-detail">🌐 <span>novasenti.com</span></a>
+
+      </div>
+
+      <div class="contact-form">
+
+        <h3>Request a Demo</h3>
+
+        <form id="demoForm">
+
+          <div class="form-group">
+
+            <label for="f-name">Your Name</label>
+
+            <input type="text" id="f-name" placeholder="Jane Smith" required />
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="f-email">Work Email</label>
+
+            <input type="email" id="f-email" placeholder="you@company.com" required />
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="f-company">Company</label>
+
+            <input type="text" id="f-company" placeholder="Your company name" required />
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="f-msg">Message <span style="color:var(--text-muted);font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+
+            <textarea id="f-msg" placeholder="Tell us about your data challenges..."></textarea>
+
+          </div>
+
+          <button type="submit" class="form-submit">Send Request</button>
+
+        </form>
+
+        <div class="form-confirm" id="formConfirm">✓ Thank you. We will be in touch shortly.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ── FOOTER ── -->
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    <div class="footer-top">
+
+      <span class="footer-brand">NovaSenti · Commercial Intelligence for Profitable Growth</span>
+
+      <nav class="footer-legal">
+
+        <a href="/privacy.html">Privacy Policy</a>
+
+        <a href="/cookies.html">Cookie Policy</a>
+
+        <a href="/terms.html">Terms of Service</a>
+
+      </nav>
+
+      <span class="footer-copy">© 2026 Nova Prospera Ltd · Malta</span>
+
+    </div>
+
+    <div class="footer-cia"><span>CLARITY. INTELLIGENCE. ADVANTAGE.</span></div>
+
+  </div>
+
+</footer>
+
+<!-- Back to top -->
+
+<a href="#top" id="back-top" aria-label="Back to top">↑</a>
+
+<script>
+
+  emailjs.init('Ko4CknJzzdJgz_0EH');
+
+  /* Back to top */
+
+  const backTop = document.getElementById('back-top');
+
+  window.addEventListener('scroll', () => {
+
+    backTop.classList.toggle('visible', window.scrollY > 400);
+
+  });
+
+  /* Form */
+
+  document.getElementById('demoForm').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const name    = document.getElementById('f-name').value.trim();
+
+    const email   = document.getElementById('f-email').value.trim();
+
+    const company = document.getElementById('f-company').value.trim();
+
+    const message = document.getElementById('f-msg').value.trim();
+
+    if (!name || !email || !company) return;
+
+    emailjs.send('service_c23nanf', 'template_e2gx1ry', {
+
+      from_name: name, from_email: email, company, message,
+
+      to_email: 'nicky@novasenti.com'
+
+    }).finally(() => {
+
+      document.getElementById('demoForm').style.display = 'none';
+
+      document.getElementById('formConfirm').style.display = 'block';
+
+    });
+
+  });
+
+</script>
+
+</body>
+
+</html>
